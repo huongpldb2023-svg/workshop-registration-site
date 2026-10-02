@@ -1,0 +1,12 @@
+{
+  "name": "workshop-registration-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trang đăng ký Workshop: Đừng xây một thương hiệu cá nhân tốn tiền",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  }
+}

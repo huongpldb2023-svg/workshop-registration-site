@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng ký Workshop: Đừng xây một thương hiệu cá nhân tốn tiền</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+.reg-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 56px;
+}
+@media (min-width: 960px) {
+  .reg-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 440px);
+    align-items: start;
+  }
+}
+.reg-input, .reg-select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #F3F5F8;
+  border: 1.5px solid #C3CBD9;
+  border-radius: 10px;
+  color: #21355A;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 13px 14px;
+}
+.reg-input::placeholder { color: #6B7690; font-weight: 500; }
+.reg-select option[value=""] { color: #5C6B85; }
+.reg-input:focus, .reg-select:focus {
+  outline: 2px solid #21355A;
+  outline-offset: 1px;
+}
+.reg-label {
+  display: block;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #21355A;
+  margin-bottom: 8px;
+}
+.reg-btn {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  padding: 17px;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #21355A;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.55), inset 0 -3px 0 rgba(0,0,0,0.12);
+}
+.reg-btn:hover { filter: brightness(1.06); }
+.reg-btn:disabled { cursor: default; opacity: 0.75; }
+.reg-3d-wrap {
+  perspective: 1600px;
+}
+.reg-card-float {
+  transform: rotateY(-5deg) rotateX(3deg) scale(1.02);
+  transform-style: preserve-3d;
+  box-shadow:
+    10px 14px 0 rgba(245, 213, 110, 0.95),
+    0 40px 70px -16px rgba(2, 5, 14, 0.65),
+    0 18px 30px -10px rgba(2, 5, 14, 0.45);
+}
+.reg-outcome-float {
+  transform: rotateY(-1.6deg) rotateX(0.8deg);
+  transform-style: preserve-3d;
+}
+.reg-num-badge {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #2E4A78 0%, #18294A 100%);
+  border: 1px solid rgba(245,213,110,0.45);
+  box-shadow:
+    3px 3px 0 rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255,255,255,0.14);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #F5D56E;
+  position: relative;
+  z-index: 1;
+}
+.reg-node-line {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 21px;
+  width: 3px;
+  background: #F5D56E;
+  z-index: 0;
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; background: #21355A; box-sizing: border-box; padding: 64px 24px 72px; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 220px 220px 0; border-color: transparent rgba(245,213,110,0.08) transparent transparent; pointer-events: none; z-index: 0;"></div>
+  <div style="position: absolute; bottom: 0; left: 0; width: 6px; height: 100%; background: linear-gradient(180deg, #F5D56E, rgba(245,213,110,0.15)); pointer-events: none; z-index: 0;"></div>
+  <div style="max-width: 1180px; margin: 0 auto; position: relative; z-index: 1;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.12);">
+      <div style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 4px; background: #F5D56E; border: none;">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: #21355A;">MIỄN PHÍ · SỐ LƯỢNG GIỚI HẠN</span>
+      </div>
+      <img src="/logo.png" alt="PAS Academy" style="height: 54px; width: auto; margin-right: 28px;">
+    </div>
+
+    <div class="reg-grid">
+
+    <div style="display: flex; flex-direction: column; gap: 28px;">
+
+      <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(24px, 5.2vw, 40px); line-height: 1.25; letter-spacing: -0.01em; color: #FFFFFF; white-space: nowrap;">
+        ĐỪNG XÂY MỘT<br>
+        <span style="color: #F5D56E;">THƯƠNG HIỆU CÁ NHÂN<br>TỐN TIỀN</span>
+      </h1>
+
+      <p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 17px; line-height: 1.65; color: #C9D2E0; max-width: 560px;">
+        Rất nhiều người bắt đầu xây thương hiệu cá nhân bằng cách lao thẳng vào xây kênh: quay video, làm content, thuê team, học storytelling, chạy truyền thông…
+        Thế nhưng lại bỏ qua những câu hỏi quan trọng hơn <strong style="color: #FFFFFF; font-weight: 700;">TRƯỚC KHI LAO VÀO THỰC HIỆN</strong>. Khi chưa trả lời được những câu hỏi đó, việc xây kênh rất dễ trở thành một cuộc chơi tốn tiền, tốn thời gian và càng làm càng đi xa khỏi hướng đúng, thậm chí đánh mất niềm tin và động lực ở chính bản thân bạn.
+      </p>
+
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="color: #21355A; background: #F5D56E; font-size: 18px; font-weight: 800; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; flex-shrink: 0;">→</span>
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0.01em; color: #F5D56E;">ĐỪNG LAO VÀO LÀM NỮA, TỈNH TÁO LẠI NÀO</span>
+      </div>
+
+      <div style="height: 1px; width: 100%; max-width: 560px; background: rgba(255,255,255,0.16);"></div>
+
+      <div>
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: #9FACC2; margin-bottom: 18px;">3 ĐIỂM MẤU CHỐT · RẤT CẦN LƯU Ý · BẠN SẼ NHÌN LẠI TRONG WORKSHOP</div>
+
+        <div style="display: flex; flex-direction: column; position: relative;">
+          <div class="reg-node-line"></div>
+
+          <div style="display: flex; gap: 18px; padding: 18px 0; align-items: flex-start;">
+            <div class="reg-num-badge">01</div>
+            <div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.04em; color: #F5D56E; margin-bottom: 4px;">ĐỊNH HƯỚNG</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 16px; color: #FFFFFF; margin-bottom: 4px;">Biết mình đang thực sự ở đâu</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.55; color: #9FACC2;">Trước khi chọn hướng đi, bạn cần nhìn rõ vị trí hiện tại của mình trên thị trường (mình có tên tuổi chưa, bao người biết mình, cái mình biết có còn phù hợp với thời đại không…).</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.12); align-items: flex-start;">
+            <div class="reg-num-badge">02</div>
+            <div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.04em; color: #F5D56E; margin-bottom: 4px;">CẠNH TRANH</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 16px; color: #FFFFFF; margin-bottom: 4px;">Biết mình sẽ thắng bằng gì</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.55; color: #9FACC2;">Đâu là điểm mạnh, cá tính đặc biệt, kỹ năng chỉ mình bạn có, tài năng ít người có mà bạn là một trong số đó, hoặc đơn giản là bạn biết mình khác biệt. Xác định đúng lợi thế độc bản để thị trường chọn bạn, nổi bật giữa những người cùng lĩnh vực, ngành nghề, thay vì cạnh tranh dàn trải với tất cả.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.12); align-items: flex-start;">
+            <div class="reg-num-badge">03</div>
+            <div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.04em; color: #F5D56E; margin-bottom: 4px;">THỰC THI</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 16px; color: #FFFFFF; margin-bottom: 4px;">Biết bước tiếp theo cần ưu tiên</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.55; color: #9FACC2;">Không bắt đầu từ việc làm, nhiều thứ cùng một lúc sẽ nhanh đuối sức và chán nản, mà từ việc biết chính xác việc gì nên làm đầu tiên. Có những chiến thắng nhỏ và liên tục, bạn sẽ có động lực mạnh mẽ hơn rất nhiều.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="reg-audience-row" style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #F5D56E; margin-right: 4px;">CHƯƠNG TRÌNH NÀY PHÙ HỢP VỚI:</span>
+        <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); font-family: 'Montserrat', sans-serif; font-size: 13px; color: #E3E8F0;">Chủ doanh nghiệp</span>
+        <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); font-family: 'Montserrat', sans-serif; font-size: 13px; color: #E3E8F0;">Solopreneur</span>
+        <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); font-family: 'Montserrat', sans-serif; font-size: 13px; color: #E3E8F0;">Freelancer</span>
+        <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); font-family: 'Montserrat', sans-serif; font-size: 13px; color: #E3E8F0;">Chuyên gia</span>
+        <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); font-family: 'Montserrat', sans-serif; font-size: 13px; color: #E3E8F0;">Người kinh doanh sản phẩm số</span>
+      </div>
+
+    </div>
+
+    <div class="reg-3d-wrap" style="display: flex; flex-direction: column; gap: 20px;">
+
+      <h1 aria-hidden="true" style="visibility: hidden; margin: 0 0 8px 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(24px, 5.2vw, 40px); line-height: 1.25; letter-spacing: -0.01em; white-space: nowrap;">
+        ĐỪNG XÂY MỘT<br>
+        THƯƠNG HIỆU CÁ NHÂN<br>TỐN TIỀN
+      </h1>
+
+      <div class="reg-outcome-float" style="background: #18294A; border-left: 4px solid #F5D56E; border-radius: 14px; padding: 22px 24px; box-shadow: 5px 5px 0 rgba(245,213,110,0.9), 0 18px 32px -8px rgba(5,9,20,0.5);">
+        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12.5px; letter-spacing: 0.08em; color: #F5D56E; margin-bottom: 8px;">SAU BUỔI NÀY, BẠN SẼ</div>
+        <div style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 15px; line-height: 1.6; color: #FFFFFF;">Biết mình đang ở đâu, nên thắng bằng gì, và bước tiếp theo thực sự cần làm là gì.</div>
+      </div>
+
+      <div style="position: relative;">
+        <div class="reg-card-float" style="position: relative; z-index: 1; padding: 3px; border-radius: 23px; background: #F5D56E;">
+          <div style="background: #FFFFFF; border-radius: 20px; padding: 36px 32px 32px 32px; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 5px; background: #F5D56E;"></div>
+            <h2 style="margin: 0 0 6px 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; color: #21355A;">Đăng ký tham gia</h2>
+            <p style="margin: 0 0 26px 0; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.55; color: #3A4860;">Số lượng tham dự có giới hạn. Điền thông tin bên dưới để giữ chỗ — bạn sẽ được chuyển vào nhóm Zalo ngay sau khi đăng ký.</p>
+
+            <form id="reg-form" novalidate>
+              <div style="margin-bottom: 16px;">
+                <label class="reg-label" for="hoTen">Họ và tên *</label>
+                <input class="reg-input" type="text" id="hoTen" name="hoTen" placeholder="Nguyễn Văn A" autocomplete="name" required>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label class="reg-label" for="soDienThoai">Số điện thoại *</label>
+                <input class="reg-input" type="tel" id="soDienThoai" name="soDienThoai" placeholder="09xx xxx xxx" autocomplete="tel" required>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label class="reg-label" for="email">Email *</label>
+                <input class="reg-input" type="email" id="email" name="email" placeholder="ban@email.com" autocomplete="email" required>
+              </div>
+              <div style="margin-bottom: 22px;">
+                <label class="reg-label" for="vaiTro">Bạn đang là ai?</label>
+                <select class="reg-select" id="vaiTro" name="vaiTro">
+                  <option value="">-- Chọn --</option>
+                  <option>Chủ doanh nghiệp</option>
+                  <option>Solopreneur</option>
+                  <option>Freelancer</option>
+                  <option>Chuyên gia</option>
+                  <option>Người kinh doanh sản phẩm số</option>
+                  <option>Mục khác</option>
+                </select>
+              </div>
+
+              <input type="text" name="website" id="website" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0;" tabindex="-1" autocomplete="off">
+
+              <button type="submit" id="reg-submit-btn" class="reg-btn" style="background: #F5D56E;">Đăng ký ngay</button>
+
+              <p id="reg-error-msg" style="display: none; margin: 14px 0 0 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 13px; line-height: 1.5; color: #C0392B; text-align: center;"></p>
+            </form>
+
+            <p style="margin: 14px 0 0 0; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 12.5px; line-height: 1.5; color: #5C6B85; text-align: center;">Thông tin của bạn chỉ dùng để xác nhận tham gia workshop.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="reg-info-align" style="display: flex; flex-direction: column; gap: 10px;">
+        <div>
+          <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #F5D56E;">HÌNH THỨC:</span>
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: #FFFFFF; margin-left: 6px;">Zoom Meeting</span>
+        </div>
+        <div>
+          <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #F5D56E;">THỜI GIAN:</span>
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: #FFFFFF; margin-left: 6px;">6h00 đến 8h00 sáng · Ngày 10/10/2026</span>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  var ZALO_GROUP_URL = "https://zalo.me/g/wwrlccev26zu63pin3k0";
+
+  function alignInfoRow() {
+    var target = document.getElementById('reg-audience-row');
+    var info = document.getElementById('reg-info-align');
+    if (!target || !info) return;
+    info.style.marginTop = '0px';
+    if (window.innerWidth < 960) return;
+    var targetRect = target.getBoundingClientRect();
+    var infoRect = info.getBoundingClientRect();
+    var delta = targetRect.top - infoRect.top;
+    if (delta > 0) {
+      info.style.marginTop = delta + 'px';
+    }
+  }
+  function scheduleAlign() {
+    alignInfoRow();
+    window.requestAnimationFrame(alignInfoRow);
+    setTimeout(alignInfoRow, 300);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scheduleAlign);
+  } else {
+    scheduleAlign();
+  }
+  window.addEventListener('load', scheduleAlign);
+  window.addEventListener('resize', alignInfoRow);
+
+  var form = document.getElementById('reg-form');
+  var btn = document.getElementById('reg-submit-btn');
+  var errMsg = document.getElementById('reg-error-msg');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errMsg.style.display = 'none';
+
+    var hoTen = document.getElementById('hoTen').value.trim();
+    var soDienThoai = document.getElementById('soDienThoai').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var vaiTro = document.getElementById('vaiTro').value;
+    var website = document.getElementById('website').value;
+
+    if (!hoTen || !soDienThoai || !email) {
+      errMsg.textContent = 'Vui lòng điền đầy đủ Họ và tên, Số điện thoại, Email.';
+      errMsg.style.display = 'block';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Đang gửi...';
+
+    fetch('/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ hoTen: hoTen, soDienThoai: soDienThoai, email: email, vaiTro: vaiTro, website: website })
+    })
+      .then(function (res) { return res.json().then(function (data) { return { status: res.status, data: data }; }); })
+      .then(function (result) {
+        if (result.status === 200 && result.data && result.data.ok) {
+          btn.textContent = 'Đang chuyển vào nhóm Zalo...';
+          window.location.href = ZALO_GROUP_URL;
+        } else {
+          throw new Error((result.data && result.data.error) || 'Có lỗi xảy ra');
+        }
+      })
+      .catch(function (err) {
+        errMsg.textContent = 'Không gửi được thông tin (' + err.message + '). Vui lòng thử lại, hoặc vào nhóm Zalo trực tiếp tại đây: ' + ZALO_GROUP_URL;
+        errMsg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Đăng ký ngay';
+      });
+  });
+})();
+</script>
+</body>
+</html>
