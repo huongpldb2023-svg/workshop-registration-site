@@ -16,7 +16,7 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const { hoTen, soDienThoai, email, vaiTro, website } = req.body || {};
+    const { hoTen, soDienThoai, email, vaiTro, nguonBiet, website } = req.body || {};
 
     // Honeypot chống bot: field "website" phải luôn trống (bị ẩn trên form thật).
     if (website) {
@@ -61,7 +61,7 @@ module.exports = async function handler(req, res) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SHEET_ID,
-      range: `'${tabName}'!A:E`,
+      range: `'${tabName}'!A:F`,
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
       requestBody: {
@@ -71,6 +71,7 @@ module.exports = async function handler(req, res) {
           String(soDienThoai).trim(),
           String(email).trim(),
           vaiTro ? String(vaiTro).trim() : '',
+          nguonBiet ? String(nguonBiet).trim() : '',
         ]],
       },
     });
