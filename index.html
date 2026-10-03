@@ -117,7 +117,7 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
   <div style="max-width: 1180px; margin: 0 auto; position: relative; z-index: 1;">
 
     <div style="display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.12);">
-      <div style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 4px; background: #F5D56E; border: none;">
+      <div style="display: inline-flex; align-items: center; padding: 9px 18px; border-radius: 12px; background: #F5D56E; border: none; box-shadow: 3px 3px 0 rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.55), inset 0 -3px 0 rgba(0,0,0,0.12);">
         <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: #21355A;">MIỄN PHÍ · SỐ LƯỢNG GIỚI HẠN</span>
       </div>
       <img src="/logo.png" alt="PAS Academy" style="height: 54px; width: auto; margin-right: 28px;">
@@ -223,7 +223,7 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
                 <label class="reg-label" for="email">Email *</label>
                 <input class="reg-input" type="email" id="email" name="email" placeholder="ban@email.com" autocomplete="email" required>
               </div>
-              <div style="margin-bottom: 22px;">
+              <div style="margin-bottom: 16px;">
                 <label class="reg-label" for="vaiTro">Bạn đang là ai?</label>
                 <select class="reg-select" id="vaiTro" name="vaiTro">
                   <option value="">-- Chọn --</option>
@@ -233,6 +233,17 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
                   <option>Chuyên gia</option>
                   <option>Người kinh doanh sản phẩm số</option>
                   <option>Mục khác</option>
+                </select>
+              </div>
+              <div style="margin-bottom: 22px;">
+                <label class="reg-label" for="nguonBiet">Bạn biết đến workshop từ đâu?</label>
+                <select class="reg-select" id="nguonBiet" name="nguonBiet">
+                  <option value="">-- Chọn --</option>
+                  <option>Lê Ngân - Pas Academy</option>
+                  <option>Phạm Củ</option>
+                  <option>10X Mastermind</option>
+                  <option>Bạn bè giới thiệu</option>
+                  <option>Khác</option>
                 </select>
               </div>
 
@@ -308,6 +319,7 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
     var soDienThoai = document.getElementById('soDienThoai').value.trim();
     var email = document.getElementById('email').value.trim();
     var vaiTro = document.getElementById('vaiTro').value;
+    var nguonBiet = document.getElementById('nguonBiet').value;
     var website = document.getElementById('website').value;
 
     if (!hoTen || !soDienThoai || !email) {
@@ -322,7 +334,7 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
     fetch('/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ hoTen: hoTen, soDienThoai: soDienThoai, email: email, vaiTro: vaiTro, website: website })
+      body: JSON.stringify({ hoTen: hoTen, soDienThoai: soDienThoai, email: email, vaiTro: vaiTro, nguonBiet: nguonBiet, website: website })
     })
       .then(function (res) { return res.json().then(function (data) { return { status: res.status, data: data }; }); })
       .then(function (result) {
