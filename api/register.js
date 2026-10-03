@@ -68,7 +68,7 @@ module.exports = async function handler(req, res) {
         values: [[
           timestamp,
           String(hoTen).trim(),
-          String(soDienThoai).trim(),
+          "'" + String(soDienThoai).trim(),
           String(email).trim(),
           vaiTro ? String(vaiTro).trim() : '',
           nguonBiet ? String(nguonBiet).trim() : '',
