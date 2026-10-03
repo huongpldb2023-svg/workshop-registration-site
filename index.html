@@ -259,7 +259,7 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
         </div>
       </div>
 
-      <div id="reg-info-align" style="display: flex; flex-direction: column; gap: 10px;">
+      <div id="reg-info-align" style="display: flex; flex-direction: column; gap: 10px; margin-top: 32px;">
         <div>
           <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #F5D56E;">HÌNH THỨC:</span>
           <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: #FFFFFF; margin-left: 6px;">Zoom Meeting</span>
@@ -285,13 +285,14 @@ body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: 
     var target = document.getElementById('reg-audience-row');
     var info = document.getElementById('reg-info-align');
     if (!target || !info) return;
-    info.style.marginTop = '0px';
+    var BASE_GAP = 32;
+    info.style.marginTop = BASE_GAP + 'px';
     if (window.innerWidth < 960) return;
     var targetRect = target.getBoundingClientRect();
     var infoRect = info.getBoundingClientRect();
     var delta = targetRect.top - infoRect.top;
     if (delta > 0) {
-      info.style.marginTop = delta + 'px';
+      info.style.marginTop = (BASE_GAP + delta) + 'px';
     }
   }
   function scheduleAlign() {
